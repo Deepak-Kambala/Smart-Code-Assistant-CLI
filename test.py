@@ -76,7 +76,7 @@ def save_edge_cases(file_path: str, edge_cases: str) -> str:
 def generate(
     file: str = typer.Argument(..., help="Path to the code file to analyze"),
     model: str = typer.Option(
-        "llama3:1b",
+        "llama3.2:1b",
         "--model",
         help="Ollama model to use",
         show_default=True
